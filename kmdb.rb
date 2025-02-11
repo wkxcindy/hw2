@@ -76,13 +76,22 @@
 # Delete existing data, so you'll start fresh each time this script is run.
 # Use `Model.destroy_all` code.
 # TODO!
+Role.destroy_all
+Movie.destroy_all
+Actor.destroy_all
+Studio.destroy_all
 
 # Generate models and tables, according to the domain model.
 # TODO!
 
+
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
+warner = Studio.new
+warner["name"] = "Warner Bros."
+warner.save
+
 
 # Prints a header for the movies output
 puts "Movies"
@@ -92,6 +101,8 @@ puts ""
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
 
+
+
 # Prints a header for the cast output
 puts ""
 puts "Top Cast"
@@ -100,3 +111,4 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
+
